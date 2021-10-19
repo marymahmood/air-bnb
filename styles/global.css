@@ -1,0 +1,38 @@
+@tailwind components;
+@tailwind base;
+
+@layer base{
+    body {
+        @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-400;
+        
+    }
+}
+
+
+@layer components {
+    
+    .button {
+        @apply cursor-pointer hover:bg-gray-50 transition duration-300 px-4 py-2 border rounded-full text-gray-500 hover:shadow-lg active:scale-90 my-2;
+    }
+   
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+
+}
+.navbar{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-700 dark:text-gray-400;
+}
+.nav__stickey{
+    background: #fff;
+    box-shadow: 0px 3px 14px #96969633;
+}
+.text_white{
+    color: #fff;
+    
+}
